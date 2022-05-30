@@ -1,0 +1,447 @@
+@font-face {
+    font-family: Montserat;
+    src: url(Montserrat-VariableFont_wght.ttf);
+}
+body{
+    font-family: Montserat, monospace;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+@media screen and (min-width:320px) and (max-width:425px){
+    /* container principal */
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    /* formatações gerais */
+    h1{
+        margin: 45px 0px 10px 5%;
+    }
+    h3{
+        font-size: 1.2em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    /* fomratação dos formulários*/
+    form{
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    form fieldset{
+        margin-top: 10px;
+        padding: 5px 0;
+    }
+    form fieldset input{
+        width: 80%;
+        padding: 10px 35px;
+        margin: 10px 0;
+    }
+    form fieldset select{
+        width: 90%;
+        padding: 10px 20px;
+        margin: 10px 0;
+    }
+    form fieldset input#postal-code,select{
+        width: 95%;
+    }
+    form fieldset div.box-informations input{
+        width: 5%;
+    }
+    form input[type='submit']{
+        padding: 10px;
+        width: 30%;
+        margin-left: 50%;
+    }
+    /* configuração dos inputs inline*/
+    .float-elements{
+        float: left;
+        width: 40%;
+    }
+    .box-informations{
+        clear: both;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    /* seção dos produtos */
+    section{
+        width:85%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    section img{
+        width: 100px;
+        float: left;
+        margin-right: 10px;
+    }
+    .produto{
+        width: 80%;
+        height: 50%;
+        padding: 10px;
+    }
+    .preco{
+        margin-top: 10px;
+    }
+    .preco-atual{
+        margin-right: 15px;
+        font-size: 0.9em;
+    }
+    .preco-antigo{
+        font-size: 0.7em;
+    }
+    .quantidade{
+        width: 40%;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5px 4px;
+    }
+    #menos, #mais{
+        border-radius: 10px;
+        padding: 1px 5px;
+    }
+    .total{
+        margin-top: 60px;
+        width: 90%;
+    }
+    .taxa-envio, .preco-final{
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width:426px) and (max-width:1024px){
+    /* container principal */
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 90vh;
+    }
+    /* formatações gerais */
+    h1{
+        margin: 10px 0px 10px 11%;
+    }
+    h3{
+        font-size: 1.2em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    /* fomratação dos formulários*/
+    form{
+        width: 40%;
+    }
+    form fieldset{
+        margin-top: 10px;
+        padding: 5px 0;
+    }
+    form fieldset input{
+        width: 80%;
+        padding: 10px 35px;
+        margin: 10px 0;
+    }
+    form fieldset select{
+        width: 90%;
+        padding: 10px 20px;
+        margin: 10px 0;
+    }
+    form fieldset input#postal-code,select{
+        width: 95%;
+    }
+    form fieldset div.box-informations input{
+        width: 5%;
+    }
+    form input[type='submit']{
+        padding: 10px;
+        width: 20%;
+        margin-left: 60%;
+    }
+    /* configuração dos inputs inline*/
+    .float-elements{
+        float: left;
+        width: 40%;
+    }
+    .box-informations{
+        clear: both;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    /* seção dos produtos */
+    section{
+        width: 35%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    section img{
+        width: 100px;
+        float: left;
+        margin-right: 10px;
+    }
+    .produto{
+        width: 80%;
+        height: 50%;
+        padding: 10px;
+    }
+    .preco{
+        margin-top: 10px;
+    }
+    .preco-atual{
+        margin-right: 15px;
+        font-size: 0.9em;
+    }
+    .preco-antigo{
+        font-size: 0.7em;
+    }
+    .quantidade{
+        width: 40%;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5px 4px;
+    }
+    #menos, #mais{
+        border-radius: 10px;
+        padding: 1px 5px;
+    }
+    .total{
+        margin-top: 60px;
+        width: 90%;
+    }
+    .taxa-envio, .preco-final{
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+}   
+@media screen and (min-width:1025px) and (max-width:1440px){
+    /* container principal */
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 90vh;
+    }
+    /* formatações gerais */
+    h1{
+        margin: 10px 0px 10px 11%;
+    }
+    h3{
+        font-size: 1.2em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    /* fomratação dos formulários*/
+    form{
+        width: 40%;
+    }
+    form fieldset{
+        margin-top: 10px;
+        padding: 5px 0;
+    }
+    form fieldset input{
+        width: 80%;
+        padding: 10px 35px;
+        margin: 10px 0;
+    }
+    form fieldset select{
+        width: 90%;
+        padding: 10px 20px;
+        margin: 10px 0;
+    }
+    form fieldset input#postal-code,select{
+        width: 95%;
+    }
+    form fieldset div.box-informations input{
+        width: 5%;
+    }
+    form input[type='submit']{
+        padding: 10px;
+        width: 20%;
+        margin-left: 60%;
+    }
+    /* configuração dos inputs inline*/
+    .float-elements{
+        float: left;
+        width: 40%;
+    }
+    .box-informations{
+        clear: both;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    /* seção dos produtos */
+    section{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    section img{
+        width: 100px;
+        float: left;
+        margin-right: 10px;
+    }
+    .produto{
+        width: 80%;
+        height: 50%;
+        padding: 10px;
+    }
+    .preco{
+        margin-top: 10px;
+    }
+    .preco-atual{
+        margin-right: 15px;
+    }
+    .preco-antigo{
+        font-size: 0.8em;
+    }
+    .quantidade{
+        width: 40%;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5px 4px;
+    }
+    #menos, #mais{
+        border-radius: 10px;
+        padding: 1px 5px;
+    }
+    .total{
+        margin-top: 60px;
+        width: 90%;
+    }
+    .taxa-envio, .preco-final{
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+/*configurações dos formulários*/
+
+form label{
+    display: block;
+    font-size: 0.7em;
+    font-weight: 100;
+}
+form fieldset{
+    font-weight: bold;
+    border: none;
+}
+form fieldset input{
+    box-sizing: border-box;
+    font-family: Montserat, monospace;
+    border-radius: 10px;
+    border: 1px solid #828282;
+}
+form fieldset select{
+    box-sizing: border-box;
+    font-family: Montserat, monospace;
+    border-radius: 10px;
+    border: 1px solid #828282;
+}
+form fieldset select:hover{
+    cursor: pointer;
+}
+/*icones no formulários*/
+form fieldset input#email{
+    background: url(icons/email.png) no-repeat center left;
+}
+form fieldset input#phone{
+    background: url(icons/phone.png) no-repeat center left;
+}
+form fieldset input#name{
+    background: url(icons/person.png) no-repeat center left;
+}
+form fieldset input#address{
+    background: url(icons/address.png) no-repeat center left;
+}
+form fieldset input#city{
+    background: url(icons/city.png) no-repeat center left;
+}
+form fieldset select#country{
+    background: url(icons/country.png) no-repeat center left;
+}
+form fieldset input#postal-code{
+    background: url(icons/postal.png) no-repeat center left;
+}
+form input[type='submit']{
+    color: white;
+    background-color: #F2994A;
+    border: none;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+form input[type='submit']:hover{
+    cursor: pointer;
+}
+/*configuração secões de conteudo*/
+section{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+section img{
+    border-radius: 10px;
+}
+/*produtos e valor total das compras*/
+.preco-atual{
+    color: #F2994A;
+    font-weight: bold;
+}
+.preco-antigo{
+    text-decoration: line-through;
+    font-weight: bold;
+}
+.quantidade{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+}
+#menos, #mais{
+    color: black;
+    background-color: #E0E0E0;
+}
+.taxa-envio, .preco-final{
+    border-top: 1px solid #BDBDBD;
+}
+.taxa-envio span, .preco-final span{
+    font-weight: bold;
+}
+/* configurações do rodapé */
+footer{
+    font-size: 0.8em;
+    height: 3vh;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: auto;
+    left: auto;
+    color: rgb(90, 90, 90);
+
+}
+footer a{
+    text-decoration: none;
+    color: rgb(89, 89, 243);
+}
+footer a:hover{
+    color: rgb(243, 50, 50);
+}
