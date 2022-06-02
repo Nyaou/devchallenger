@@ -316,23 +316,3 @@ div.card span{
     display: block;
     color: #828282;
 }
-/* configurações do rodapé */
-footer{
-    font-size: 0.8em;
-    height: 4vh;
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    right: auto;
-    left: auto;
-    color: rgb(90, 90, 90);
-
-}
-footer a{
-    text-decoration: none;
-    color: rgb(89, 89, 243);
-}
-footer a:hover{
-    color: rgb(243, 50, 50);
-}
