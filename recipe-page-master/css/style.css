@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* 
+    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
+*/
+:root{
+    --bgColor:#FFFFFF;
+    --Orange: #F2994A;
+    --gray: #BDBDBD;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul, ol{
+    list-style: none;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3{
+    font-family: 'Playfair Display', serif;
+}
+.orange{
+    color: var(--Orange);
+}
+.gray{
+    color: var(--gray);
+}
+@media screen and (min-width:320px) and (max-width:425px) {
+
+    /* configurações do cabeçalho */
+    header, main{
+        margin: 25px auto;
+        width: 90vw;
+    }
+    header h1{
+        font-size: 1.6em;
+    }
+    header div{
+        margin-top: 10px;
+        display: flex;
+        align-items: flex-start;
+    }
+    header p{
+        margin-left: 10px;
+        font-size: 0.8em;
+        width: 80%;
+    }
+    header svg{
+        margin-top: 3px;
+    }
+    header picture{
+        display: flex;
+        margin-top: 20px;
+    }
+    header picture > img{
+        border-radius: 20px;
+    }
+
+    /* configurações do tempo e rendimento da receita */
+    section.tempo-preparo{
+        font-size: 0.7em;
+        display: flex;
+        flex-direction: column;
+    }
+    section.tempo-preparo > div.quantidade, div.tempo > div{
+        display: flex;
+    }
+    section.tempo-preparo > div > span, div > div > span{
+        margin-right: 5px;
+    }
+    section.tempo-preparo > div.tempo{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .informacao-tempo-preparo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* configuraões da seção de ingredientes */
+
+    section.ingredientes > h2, h3{
+        margin-bottom: 15px;
+    }
+    section.ingredientes > h3{
+        font-weight: 400;
+    }
+    section.ingredientes > ul > li{
+        font-size: 0.8em;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: baseline;
+    }
+    section.ingredientes > ul > li > label{
+        margin-left: 5px;
+        line-height: 2em;
+    }
+
+    /* configuração da seção de instruções */
+
+    section.instrucoes > h2{
+        margin-bottom: 25px;
+    }
+
+    section.instrucoes > ol > li > span{
+        background-color: var(--Orange);
+        padding: 1px 14px;
+        color: white;
+        margin-right: 10px;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        border-radius: 5px;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.4em;
+    }
+    section.instrucoes > ol > li{
+        display: flex;
+        margin-bottom: 15px;
+        font-size: 0.8em;
+    }
+}
+@media screen and (min-width:426px) and (max-width:1024px) {
+    /* configurações do cabeçalho */
+    header, main{
+        margin: 25px auto;
+        width: 90vw;
+    }
+    header h1{
+        font-size: 1.6em;
+    }
+    header div{
+        margin-top: 10px;
+        display: flex;
+        align-items: flex-start;
+    }
+    header p{
+        margin-left: 10px;
+        font-size: 0.8em;
+        width: 80%;
+    }
+    header svg{
+        margin-top: 3px;
+    }
+    header picture{
+        display: flex;
+        margin-top: 20px;
+    }
+    header picture > img{
+        border-radius: 20px;
+    }
+
+    /* configurações do tempo e rendimento da receita */
+    section.tempo-preparo{
+        width: 80%;
+        border-radius: 10px;
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    section.tempo-preparo > div.quantidade, div.tempo > div{
+        display: flex;
+    }
+    section.tempo-preparo > div > span, div > div > span{
+        margin-right: 5px;
+    }
+    section.tempo-preparo > div.tempo{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .informacao-tempo-preparo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* configuraões da seção de ingredientes */
+
+    section.ingredientes > h2, h3{
+        margin-bottom: 15px;
+    }
+    section.ingredientes > h3{
+        font-weight: 400;
+    }
+    section.ingredientes > ul > li{
+        font-size: 0.8em;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: baseline;
+        width: 60%;
+    }
+    section.ingredientes > ul > li > label{
+        margin-left: 5px;
+        line-height: 2em;
+    }
+
+    /* configuração da seção de instruções */
+
+    section.instrucoes > h2{
+        margin-bottom: 25px;
+    }
+
+    section.instrucoes > ol > li > span{
+        background-color: var(--Orange);
+        padding: 1px 14px;
+        color: white;
+        margin-right: 10px;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        border-radius: 5px;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.4em;
+    }
+    section.instrucoes > ol > li{
+        display: flex;
+        margin-bottom: 15px;
+        width: 60%;
+    }
+}
+@media screen and (min-width:1025px) and (max-width:1440px){
+     /* configurações do cabeçalho */
+     header, main{
+        margin: 25px auto;
+        width: 70vw;
+    }
+    header h1{
+        font-size: 2.5em;
+    }
+    header div{
+        margin-top: 10px;
+        display: flex;
+        align-items: flex-start;
+    }
+    header p{
+        margin-left: 10px;
+        font-size: 1em;
+        width: 60%;
+    }
+    header svg{
+        margin-top: 3px;
+    }
+    header picture{
+        display: flex;
+        margin-top: 20px;
+    }
+    header picture > img{
+        border-radius: 20px;
+    }
+
+    /* configurações do tempo e rendimento da receita */
+    section.tempo-preparo{
+        width: 15vw;
+        padding: 10px 25px;
+        border-radius: 10px;
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        float: right;
+        background-color: var(--bgColor);
+        box-shadow:  0px 0px 9px rgba(0, 0, 0, 0.432);
+        
+    }
+    section.tempo-preparo > div.quantidade, div.tempo > div{
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    section.tempo-preparo > div > span, div > div > span{
+        margin-right: 5px;
+    }
+    section.tempo-preparo > div.tempo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .informacao-tempo-preparo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* configuraões da seção de ingredientes */
+
+    section.ingredientes > h2, h3{
+        margin-bottom: 15px;
+        font-size: 1.6em;
+    }
+    section.ingredientes > h3{
+        font-weight: 400;
+    }
+    section.ingredientes > ul > li{
+        font-size: 1em;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: baseline;
+        width: 60%;
+        text-align: justify;
+    }
+    section.ingredientes > ul > li > label{
+        margin-left: 5px;
+        line-height: 2em;
+    }
+
+    /* configuração da seção de instruções */
+
+    section.instrucoes > h2{
+        margin-bottom: 25px;
+    }
+
+    section.instrucoes > ol > li > span{
+        background-color: var(--Orange);
+        height: 30px;
+        width: 40px;
+        color: white;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.2em;
+    }
+    section.instrucoes > ol > li > p{
+        width: 80%;
+    }
+    section.instrucoes > ol > li{
+        display: flex;
+        margin-bottom: 15px;
+        width: 60%;
+        font-size: 1em;
+        text-align: justify;
+    }
+}
+@media screen and (min-width:1441px){
+    /* configurações do cabeçalho */
+    header, main{
+        margin: 25px auto;
+        width: 60vw;
+    }
+    header h1{
+        font-size: 2.5em;
+    }
+    header div{
+        margin-top: 10px;
+        display: flex;
+        align-items: flex-start;
+    }
+    header p{
+        margin-left: 10px;
+        font-size: 1em;
+        width: 60%;
+    }
+    header svg{
+        margin-top: 3px;
+    }
+    header picture{
+        display: flex;
+        margin-top: 20px;
+    }
+    header picture > img{
+        border-radius: 20px;
+    }
+
+    /* configurações do tempo e rendimento da receita */
+    section.tempo-preparo{
+        width: 100%;
+        padding: 10px 25px;
+        border-radius: 10px;
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+        background-color: var(--bgColor);
+        box-shadow:  0px 0px 9px rgba(0, 0, 0, 0.432);
+        margin-bottom: 20px;
+    }
+    section.tempo-preparo > div.quantidade, div.tempo > div{
+        display: flex;
+        margin: 25px 20px;
+    }
+    section.tempo-preparo > div > span, div > div > span{
+        margin-right: 5px;
+    }
+    section.tempo-preparo > div.tempo{
+        display: flex;
+        justify-content: space-between;
+    }
+    .informacao-tempo-preparo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* configuraões da seção de ingredientes */
+
+    section.ingredientes > h2, h3{
+        margin-bottom: 15px;
+        font-size: 1.6em;
+    }
+    section.ingredientes > h3{
+        font-weight: 400;
+    }
+    section.ingredientes > ul > li{
+        font-size: 1em;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: baseline;
+        width: 70%;
+        text-align: justify;
+    }
+    section.ingredientes > ul > li > label{
+        margin-left: 5px;
+        line-height: 2em;
+    }
+
+    /* configuração da seção de instruções */
+
+    section.instrucoes > h2{
+        margin-bottom: 25px;
+    }
+
+    section.instrucoes > ol > li > span{
+        background-color: var(--Orange);
+        height: 30px;
+        width: 40px;
+        color: white;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.2em;
+    }
+    section.instrucoes > ol > li > p{
+        width: 80%;
+    }
+    section.instrucoes > ol > li{
+        display: flex;
+        margin-bottom: 15px;
+        width: 75%;
+        font-size: 1em;
+        text-align: justify;
+    }
+}
