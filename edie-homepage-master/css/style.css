@@ -1,0 +1,985 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Heebo', sans-serif;
+*/
+
+/* configurações gerais*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1, footer > h2{
+    font-family: 'Heebo', sans-serif;
+}
+main img{
+    border-radius: 20px;
+}
+.link{
+    color: #2D9CDB;
+}
+#contact > h2{
+    text-indent: -2000px;
+    width: 10px;
+    height: 10px;
+}
+.caixa-formulario{
+    background-color: #F2F2F2;
+}
+.caixa-formulario > .email{
+    background-color: #F2F2F2;
+    color: #BDBDBD;
+    border: none;
+}
+.caixa-formulario > .button{
+    border: none;
+    color: white;
+    background-color: #2D9CDB;
+}
+#services > div > span{
+    color: white;
+}
+#services > #designUiUx > span{
+    background-color: #2D9CDB;
+}
+#services > #Frontend > span{
+    background-color: #27AE60;
+}
+#services > #Backend > span{
+    background-color: #EB5757;
+}
+#services > div > h3{
+    font-weight: bold;
+}
+#services > div > button{
+    color: #828282;
+    background-color: #E0E0E0;
+    border: 1px solid #E0E0E0;
+}
+#services > div > button:hover{
+    background-color: #2D9CDB;
+    color: white;
+    border: 1px solid white;
+}
+#services > div:hover{
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.322);
+}
+#ourworks > div > span{
+    color: #828282;
+}
+
+#ourworks > a{
+    color: #2D9CDB;
+    text-decoration: none;
+}
+#team > span{
+    color: #EB5757;
+}
+#team > p{
+    color: #4F4F4F;
+}
+#clients > div > span:last-child{
+    color: #828282;
+}
+footer{
+    background-color: #100E1D;
+    clear: both;
+}
+footer > nav.nav-self > a{
+    color: white;
+    text-decoration: none;
+}
+footer > nav.redes-socias{
+    color: white;
+}
+footer > form{
+    color: white;
+}
+
+@media screen and (min-width:320px) and (max-width:425px) {
+    /* configurações gerais*/
+    main{
+        padding: 0 10px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    /* configuração do cabeçalho */
+    header nav > a{
+        display: none;
+    }
+
+    /* configurações das seções das conteúdo principal*/
+    #home > img{
+        display: flex;
+        width: 350px;
+        height: 140px;
+        margin:  15px auto;
+    }
+    #home >p, #home > h2{
+        margin: 0 35px;
+    }
+    #home > p{
+        font-size: 0.8em;
+    }
+    #home > p:last-child{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #contact > form{
+        margin: 0 35px;
+    }
+    #contact > form > label{
+        font-size: 0.6em;
+    }
+    .caixa-formulario{
+        width: 90%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        font-size: 1.2em;
+    }
+    .caixa-formulario > .email{
+        width: 75%;
+        text-indent: 10px;
+        font-size: 0.8em;
+    }
+    .caixa-formulario > .button{
+        width: 25%;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 0.8em;
+    }
+
+    #services > h2{
+        margin: 100px 35px;
+    }
+    #services > div{
+        margin: 0 0 25px 0;
+        padding: 25px 35px ;
+        border-radius: 20px;
+    }
+    #services > div > span,#services > div > h3, #services > div > p{
+        margin-bottom: 20px;
+    }
+    #services > div > span{
+        font-size: 35px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    #services > div > h3{
+        font-size: 1.2em;
+    }
+    #services > div > p{
+        font-size: 0.8em;
+    }
+    #services > div > button{
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    #ourworks > h2{
+        margin: 100px 35px 0 35px;
+    }
+    #ourworks > div{
+        margin: 50px 0;
+    }
+    #ourworks > div > img{
+        width: 350px;
+        display: flex;
+        margin: 0 auto;
+    }
+    #ourworks > div > span{
+        margin-top: 10px;
+        font-size: 0.8em;
+        
+    }
+    #ourworks > div > span, #ourworks > div > h3{
+        display: flex;
+        justify-content: center;
+    }
+    #ourworks > a{
+        
+        display: flex;
+        align-items: center;
+    }
+    #ourworks > a > span{
+        margin-right: 10px;
+    }
+
+    #team{
+        margin: 100px 0;
+    }
+    
+    #team > h2{
+        width: 80%;
+        font-size: 2em;
+        margin-bottom: 25px;
+    }
+    #team > p{
+        width: 80%;
+        
+    }
+    #team > div{
+        margin: 25px auto 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    #team > div > img{
+        width: 200px;
+        height: 150px;
+        margin: 0 20px;
+    }
+    #team > div > div > img:first-child{
+        width: 120px;
+    }
+    #team > div > div > img{
+        width: 150px;
+    }
+
+    #clients > p{
+        font-size: 1.5em;
+    }
+    #clients > div{
+        margin-top: 25px;
+        margin-bottom: 100px;
+        float: left;
+    }
+    #clients > div > img{
+        width: 80px;
+    }
+    #clients > div > img, #clients > div > span{
+        float: left;
+    }
+    #clients > div > span{
+        margin-left: 10px;
+    }
+    #clients > div > span{
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+    #clients > div > span:last-child{
+        font-size: 1em;
+    }
+
+    footer{
+        padding: 0 0 100px 0;
+    }
+    footer > nav.nav-self{
+        padding-top: 25px ;
+        display: flex;
+        flex-direction: column;
+    }
+    footer > nav.nav-self > a{
+        margin: 10px 35px;
+    }
+    footer > nav.redes-socias{
+        margin: 80px 35px;
+    }
+    footer > nav.redes-socias > h2{
+        margin-bottom: 15px;
+        font-size: 1.8em;
+    }
+    footer > nav.redes-socias > a{
+        margin-right: 10px;
+        padding-top: 20px;
+    }
+    footer > form{
+        margin: 0 35px 100px 35px;
+    }
+}
+@media screen and (min-width:426px) and (max-width:768px) {
+    /* configurações gerais*/
+    main{
+        padding: 0 10px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    /* configuração do cabeçalho */
+    header nav > span{
+        display: none !important;
+    }
+    header > nav > a{
+        text-decoration: none;
+        color: black;
+        margin: 0 5px;
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+    header > nav > a:hover{
+        border-bottom: 1px solid black;
+    }
+    /* configurações das seções das conteúdo principal*/
+    #home > img{
+        display: flex;
+        width: 650px;
+        height: 250px;
+        margin:  15px auto;
+    }
+    #home >p, #home > h2{
+        margin: 0 35px;
+    }
+    #home > p{
+        font-size: 0.8em;
+    }
+    #home > p:last-child{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    /************/
+    #contact > form{
+        margin: 0 35px;
+    }
+    #contact > form > label{
+        font-size: 0.6em;
+    }
+    .caixa-formulario{
+        width: 90%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        font-size: 1.2em;
+    }
+    .caixa-formulario > .email{
+        width: 75%;
+        text-indent: 10px;
+        font-size: 0.8em;
+    }
+    .caixa-formulario > .button{
+        width: 25%;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 0.8em;
+    }
+    /************/
+    #services {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #services > h2{
+        margin: 100px 35px;
+        width: 100%;
+        text-align: center;
+    }
+    #services > div{
+        margin: 0px 0 25px 0;
+        padding: 25px 35px ;
+        border-radius: 20px;
+        width: 30%;
+    }
+    #services > div > span,#services > div > h3, #services > div > p{
+        margin-bottom: 20px;
+    }
+    #services > div > span{
+        font-size: 35px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    #services > div > h3{
+        font-size: 1.2em;
+    }
+    #services > div > p{
+        font-size: 0.8em;
+    }
+    #services > div > button{
+        padding: 10px;
+        border-radius: 10px;
+    }
+    /************/
+    #ourworks{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #ourworks > h2{
+        margin: 100px 0px 50px 0px;
+        text-align: center;
+        width: 100%;
+    }
+    #ourworks > div{
+        margin: 10px 0px;
+    }
+    #ourworks > div > img{
+        width: 300px;
+        display: flex;
+        margin: 0 auto;
+    }      
+    #ourworks > div > span{
+        margin-top: 10px;
+        font-size: 0.8em;
+    }
+    #ourworks > div > span, #ourworks > div > h3{
+        display: flex;
+        justify-content: center;
+    }
+    #ourworks > a{
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #ourworks > a > span{
+        margin-right: 10px;
+    }
+    /************/
+    #team{
+        margin: 100px 0;
+    }
+    #team > span{
+        display:block;
+    }
+    #team > h2, #team > p, #team > span{
+        width: 100%;
+        text-align: center;
+    }
+    #team > div{
+        width: 100%;
+        margin: 25px auto 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #team > div > img{
+        width: 200px;
+        margin: 0 20px;
+    }
+    #team > div > div > img:first-child{
+        width: 200px;
+    }
+    #team > div > div > img{
+        width: 200px;
+    }
+    /************/
+    #clients > p{
+        font-size: 1.5em;
+    }
+    #clients > div{
+        margin-top: 25px;
+        margin-bottom: 100px;
+        position: relative;
+    }
+    #clients > div > img{
+        width: 100px;
+    }
+    #clients > div > span{
+        margin-left: 10px;
+        font-size: 1.5em;
+        margin-top: 10px;
+        position: absolute;
+        left: 100px;
+    }
+    #clients > div > span:last-child{
+        font-size: 1em;
+        position: absolute;
+        top: 50px;
+    }
+
+    footer{
+        padding: 0 0 100px 0;
+    }
+    footer > nav.nav-self{
+        padding-top: 25px ;
+        display: flex;
+        flex-direction: column;
+    }
+    footer > nav.nav-self > a{
+        margin: 10px 35px;
+    }
+    footer > nav.redes-socias{
+        margin: 80px 35px;
+    }
+    footer > nav.redes-socias > h2{
+        margin-bottom: 15px;
+        font-size: 1.8em;
+    }
+    footer > nav.redes-socias > a{
+        margin-right: 10px;
+        padding-top: 20px;
+    }
+    footer > form{
+        margin: 0 35px 100px 35px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1025px){
+   /* configurações gerais*/
+   main{
+    padding: 0 10px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    /* configuração do cabeçalho */
+    header nav > span{
+        display: none !important;
+    }
+    header > nav > a{
+        text-decoration: none;
+        color: black;
+        margin: 0 5px;
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+    header > nav > a:hover{
+        border-bottom: 1px solid black;
+    }
+    /* configurações das seções das conteúdo principal*/
+    #home > img{
+        display: flex;
+        width: 900px;
+        height: 350px;
+        margin:  15px auto;
+    }
+    #home >p, #home > h2{
+        margin: 0 35px;
+    }
+    #home > p{
+        font-size: 0.8em;
+    }
+    #home > p:last-child{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    /************/
+    #contact{
+        width: 80vw;
+        margin: 20px auto;
+    }
+    #contact > form{
+        width: 80%;
+    }
+    #contact > form > label{
+        font-size: 0.6em;
+    }
+    .caixa-formulario{
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        font-size: 1.2em;
+    }
+    .caixa-formulario > .email{
+        width: 75%;
+        text-indent: 10px;
+        font-size: 0.8em;
+    }
+    .caixa-formulario > .button{
+        width: 25%;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 0.8em;
+    }
+    /************/
+    #services {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #services > h2{
+        margin: 100px 35px;
+        width: 100%;
+        text-align: center;
+    }
+    #services > div{
+        margin: 0px 0 25px 0;
+        padding: 25px 35px ;
+        border-radius: 20px;
+        width: 30%;
+    }
+    #services > div > span,#services > div > h3, #services > div > p{
+        margin-bottom: 20px;
+    }
+    #services > div > span{
+        font-size: 35px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #services > div > h3{
+        font-size: 1.2em;
+    }
+    #services > div > p{
+        font-size: 0.8em;
+    }
+    #services > div > button{
+        padding: 10px;
+        border-radius: 10px;
+    }
+    /************/
+    #ourworks{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #ourworks > h2{
+        margin: 100px 0px 50px 0px;
+        text-align: center;
+        width: 100%;
+    }
+    #ourworks > div{
+        margin: 10px 0px;
+    }
+    #ourworks > div > img{
+        width: 400px;
+        display: flex;
+        margin: 0 auto;
+    }      
+    #ourworks > div > span{
+        margin-top: 10px;
+        font-size: 0.8em;
+    }
+    #ourworks > div > span, #ourworks > div > h3{
+        display: flex;
+        justify-content: center;
+    }
+    #ourworks > a{
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #ourworks > a > span{
+        margin-right: 10px;
+    }
+    /************/
+    #team{
+        margin: 100px 0;
+    }
+    #team > span{
+        display:block;
+    }
+    #team > h2, #team > p, #team > span{
+        width: 100%;
+        text-align: center;
+    }
+    #team > div{
+        width: 100%;
+        margin: 25px auto 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #team > div > img{
+        width: 200px;
+        margin: 0 20px;
+    }
+    #team > div > div > img:first-child{
+        width: 200px;
+    }
+    #team > div > div > img{
+        width: 200px;
+    }
+    /************/
+    #clients > p{
+        font-size: 1.5em;
+    }
+    #clients > div{
+        margin-top: 25px;
+        margin-bottom: 100px;
+        position: relative;
+    }
+    #clients > div > img{
+        width: 80px;
+    }
+    #clients > div > span{
+        margin-left: 10px;
+        font-size: 1.5em;
+        margin-top: 10px;
+        position: absolute;
+        left: 100px;
+    }
+    #clients > div > span:last-child{
+        font-size: 1em;
+        position: absolute;
+        top: 50px;
+    }
+
+    footer{
+        padding: 0 0 100px 0;
+    }
+    footer > nav.nav-self{
+        padding-top: 25px ;
+        display: flex;
+        flex-direction: column;
+    }
+    footer > nav.nav-self > a{
+        margin: 10px 35px;
+    }
+    footer > nav.redes-socias{
+        margin: 80px 35px;
+    }
+    footer > nav.redes-socias > h2{
+        margin-bottom: 15px;
+        font-size: 1.8em;
+    }
+    footer > nav.redes-socias > a{
+        margin-right: 10px;
+        padding-top: 20px;
+    }
+    footer > form{
+        margin: 0 35px 100px 35px;
+    }
+}
+@media screen and (min-width:1026px) and (max-width:1441px){
+    /* configurações gerais*/
+   main{
+    padding: 0 10px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    /* configuração do cabeçalho */
+    header nav > span{
+        display: none !important;
+    }
+    header > nav > a{
+        text-decoration: none;
+        color: black;
+        margin: 0 5px;
+        padding: 5px 10px;
+        font-size: 1.2em;
+    }
+    header > nav > a:hover{
+        border-bottom: 1px solid black;
+    }
+    /* configurações das seções das conteúdo principal*/
+    #home > img{
+        display: flex;
+        width: 1300px;
+        height: 300px;
+        margin:  15px auto;
+    }
+    #home >p, #home > h2{
+        margin: 0 35px;
+    }
+    #home > p{
+        font-size: 0.8em;
+    }
+    #home > p:last-child{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    /************/
+    #contact{
+        width: 80vw;
+        margin: 20px auto;
+    }
+    #contact > form{
+        width: 80%;
+    }
+    #contact > form > label{
+        font-size: 0.6em;
+    }
+    .caixa-formulario{
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        font-size: 1.2em;
+    }
+    .caixa-formulario > .email{
+        width: 75%;
+        text-indent: 10px;
+        font-size: 0.8em;
+    }
+    .caixa-formulario > .button{
+        width: 25%;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 0.8em;
+    }
+    /************/
+    #services {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #services > h2{
+        margin: 100px 35px;
+        width: 100%;
+        text-align: center;
+    }
+    #services > div{
+        margin: 0px 0 25px 0;
+        padding: 25px 35px ;
+        border-radius: 20px;
+        width: 30%;
+    }
+    #services > div > span,#services > div > h3, #services > div > p{
+        margin-bottom: 20px;
+    }
+    #services > div > span{
+        font-size: 35px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #services > div > h3{
+        font-size: 1.4em;
+    }
+    #services > div > p{
+        font-size: 1em;
+    }
+    #services > div > button{
+        padding: 10px;
+        border-radius: 10px;
+    }
+    /************/
+    #ourworks{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #ourworks > h2{
+        margin: 100px 0px 50px 0px;
+        text-align: center;
+        width: 100%;
+    }
+    #ourworks > div{
+        margin: 10px 0px;
+    }
+    #ourworks > div > img{
+        width: 500px;
+        display: flex;
+        margin: 0 auto;
+    }      
+    #ourworks > div > span{
+        margin-top: 10px;
+        font-size: 0.8em;
+    }
+    #ourworks > div > span, #ourworks > div > h3{
+        display: flex;
+        justify-content: center;
+    }
+    #ourworks > a{
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #ourworks > a > span{
+        margin-right: 10px;
+    }
+    /************/
+    #team{
+        margin: 100px 0;
+    }
+    #team > span{
+        display:block;
+    }
+    #team > h2, #team > p, #team > span{
+        width: 100%;
+        text-align: center;
+    }
+    #team > div{
+        width: 100%;
+        margin: 25px auto 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #team > div > img{
+        width: 200px;
+        margin: 0 20px;
+    }
+    #team > div > div > img:first-child{
+        width: 200px;
+    }
+    #team > div > div > img{
+        width: 200px;
+    }
+    /************/
+    #clients{
+        margin-left: 500px;
+    }
+    #clients > p{
+        font-size: 1.2em;
+        width: 60%;
+    }
+    #clients > div{
+        margin-top: 25px;
+        margin-bottom: 100px;
+        position: relative;
+    }
+    #clients > div > img{
+        width: 80px;
+    }
+    #clients > div > span{
+        margin-left: 10px;
+        font-size: 1.5em;
+        margin-top: 10px;
+        position: absolute;
+        left: 100px;
+    }
+    #clients > div > span:last-child{
+        font-size: 1em;
+        position: absolute;
+        top: 50px;
+    }
+
+    footer{
+        padding: 0 0 100px 0;
+    }
+    footer > nav.nav-self{
+        padding-top: 25px ;
+        display: flex;
+        flex-direction: column;
+    }
+    footer > nav.nav-self > a{
+        margin: 10px 35px;
+    }
+    footer > nav.redes-socias{
+        margin: 80px 35px;
+    }
+    footer > nav.redes-socias > h2{
+        margin-bottom: 15px;
+        font-size: 1.8em;
+    }
+    footer > nav.redes-socias > a{
+        margin-right: 10px;
+        padding-top: 20px;
+    }
+    footer > form{
+        width: 40%;
+        margin: 0 35px 100px 35px;
+    }
+}
