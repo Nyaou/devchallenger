@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="estilo.css">
   <title>Checkout Page</title>
+
+  
 </head>
 <body>
   <h1>Checkout</h1>
@@ -67,9 +69,9 @@
           <span class="preco-antigo">$94.99</span>
         </div>
         <div class="quantidade">
-          <span id="menos">-</span>
-          <span id="qtd-number">1</span>
-          <span id="mais">+</span>
+          <span id="item1Menos">-</span>
+          <span id="item1-qtd">1</span>
+          <span id="item1Mais">+</span>
         </div>
       </div>
       <div class="produto">
@@ -80,9 +82,9 @@
           <span class="preco-antigo">$124.99</span>
         </div>
         <div class="quantidade">
-          <span id="menos">-</span>
-          <span id="qtd-number">1</span>
-          <span id="mais">+</span>
+          <span id="item2Mais">-</span>
+          <span id="item2-qtd">1</span>
+          <span id="item2Menos">+</span>
         </div>
       </div>
       <!-- Fim produtos -->
@@ -101,5 +103,29 @@
       <!-- Fim Total -->
     </section>
   </main>
+  <script>
+    var item1 = document.getElementById('item1-qtd')
+    var item2 = document.getElementById('item2-qtd')
+     
+    var item1Mais = document.getElementById('item1Mais')
+    var item1Menos = document.getElementById('item1Menos')
+    
+    function quantidade(){
+      var qtd
+      if(this.textContent === '+'){
+        qtd = parseInt(item1)
+        qtd += 1
+        item1.innerHTML = qtd
+      }else if(this.textContent === '-'){
+        parseInt(item1)
+        item1 -= 1
+        item1.innerHTML = item1
+      }
+    }
+
+    item1Mais.addEventListener('click',quantidade)
+    item1Menos.addEventListener('click',quantidade)
+
+  </script>
 </body>
 </html>
